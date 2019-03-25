@@ -82,3 +82,5 @@ Fortement inspiré par https://checklists.opquast.com/seo/
 - 78 Serveur Les noms de domaine secondaires redirigent en 301 vers le nom de domaine principal.
 - 79 Serveur Les URL alternatives vers chaque page font l'objet d'une redirection 301 vers l'URL principale.
 - 80 Serveur Le site et le serveur sont configurés pour délivrer les pages de manière performante.
+
+Voir aussi https://github.com/ibandominguez/seo-checklist
