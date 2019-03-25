@@ -84,3 +84,5 @@ Fortement inspiré par https://checklists.opquast.com/seo/
 - 80 Serveur Le site et le serveur sont configurés pour délivrer les pages de manière performante.
 
 Voir aussi https://github.com/ibandominguez/seo-checklist
+
+Et enfin https://github.com/tutsplus/SEO-Checklist-for-Web-Designers/blob/master/seo_checklist.md
