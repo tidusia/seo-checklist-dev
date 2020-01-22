@@ -1,6 +1,33 @@
 👷‍♂️ projet en construction !
 
-Fortement inspiré par https://checklists.opquast.com/seo/
+# Bonnes pratiques référencement
+
+Inspirations :
+
+- [Opquast checklist](https://checklists.opquast.com/seo/)
+- [ibandominguez SEO checklist](https://github.com/ibandominguez/seo-checklist)
+- [TutsPlus SEO checklist](https://github.com/tutsplus/SEO-Checklist-for-Web-Designers/blob/master/seo_checklist.md)
+- [FrontEnd Masters Modern SEO course](https://frontendmasters.com/courses/modern-seo/introduction/)
+
+## Introduction
+
+L'objecif de ce document est de concentrer en une seule checklist un condensé des meilleures pratiques modernes liées au référencement pour le développeur front-end.
+
+Le référencement moderne implique autant les moteurs de recherche que les réseaux sociaux. Il faut s'assurer que le contenu soit bien interprété par les deux.
+
+## Stratégies de SEO traditionnelles
+
+- Faciliter le travail des crawlers.
+- Privilégier du contenu de qualité, quitte à en avoir moins. Du contenu qui intéresse réellement vos utilisateurs.
+- Ne pas essayer de placer des mots-clés a tire-larigot. Les moteurs de recherchent sont devenus meilleurs que nous pour détecter les tricheurs, et vous prendriez juste le risque d'être catégorisé comme tel.
+- Un contenu qui se démarque est unique et ciblé. Utilisant la terminologie adpatée aux utilisateurs.
+- Faire aussi attention à la présentation : un contenu clair avec des médias riches bien ciblés augmentent la rétention des utilisateurs à condition que ce soit pertinent avec le contenu textuel.
+- Quand le contenu s'y prête, penser à l'actualiser régulièrement. Par exemple si vous listez les 10 meilleurs site de voyage, les moteurs de recherches vont privilégier les pages s'étant régulièrement mises à jour.
+- Une page avec du contenu trop vieux (dépassé), des liens cassés, etc. est catégorisée obsolète et perdra fortement du SEO.
+- consrtruire une stratégie de "link building" (ce point sera bientôt précisé)
+- oublier complètement toute utilisation de liste de mots clés balancées soit dans la `<meta name="keywords" />` ou pire de manière cachée dans le contenu.
+
+## Checklist Opquast
 
 - 1 Alternatives Chaque image ou élément non textuel est dotée d'une alternative textuelle
 - 2 Alternatives Chaque contenu audio et vidéo est accompagné de sa transcription textuelle
@@ -22,7 +49,7 @@ Fortement inspiré par https://checklists.opquast.com/seo/
 - 18 Contenu La page d'accueil expose la nature des contenus et services proposés.
 - 19 Contenu L'adresse et le numéro de téléphone de l'entreprise sont disponibles sous forme textuelle.
 - 20 Contenu Les formats d'images utilisés sont indexables par les principaux moteurs de recherche d'image.
-- 21 Contenu <div>Javascript ou les styles CSS ne sont pas utilisés pour masquer un contenu de façon permanente.</div>
+- 21 Contenu Javascript ou les styles CSS ne sont pas utilisés pour masquer un contenu de façon permanente.
 - 22 Contenu Le texte des documents PDF internes est sélectionnable.
 - 23 Contenu Si le site propose un fil de syndication, celui propose des contenus et pas seulement des liens.
 - 24 Contenu Les images sont cohérentes avec les contenus de la page.
@@ -82,7 +109,3 @@ Fortement inspiré par https://checklists.opquast.com/seo/
 - 78 Serveur Les noms de domaine secondaires redirigent en 301 vers le nom de domaine principal.
 - 79 Serveur Les URL alternatives vers chaque page font l'objet d'une redirection 301 vers l'URL principale.
 - 80 Serveur Le site et le serveur sont configurés pour délivrer les pages de manière performante.
-
-Voir aussi https://github.com/ibandominguez/seo-checklist
-
-Et enfin https://github.com/tutsplus/SEO-Checklist-for-Web-Designers/blob/master/seo_checklist.md
