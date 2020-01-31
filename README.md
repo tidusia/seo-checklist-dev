@@ -4,7 +4,7 @@ Ceci est une checklist à destination du développeur sur les points à vérifie
 
 Le référencement moderne implique autant les moteurs de recherche que les réseaux sociaux. Il faut s'assurer que le contenu soit bien interprété par les deux.
 
-## SEO traditionnel
+## SEO traditionnel (Cette section est en chantier 👷‍♂️)
 
 - [ ] Pas de `meta keywords` ni de liste de mots-clés cachés dans le contenu.
 - [ ] Pas de liens cassés
@@ -104,14 +104,17 @@ Le référencement moderne implique autant les moteurs de recherche que les rés
 
 Voici une bonne base documentée à copier-coller dans votre code en remplaçant les valeurs. Pour aller plus loin, voir la doc de [The Open Graph protocol](https://ogp.me/).
 
-```
+```html
 <!-- OpenGraph, à placer sous la balise <title> -->
 <!-- Pour plus d'informations : https://ogp.me/ -->
 <!-- Titre : penser à faire un titre assez court qui décrit bien la page, comme pour le SEO classique -->
 <meta property="og:title" content="SEO pour les Samouraïs" />
 
 <!-- Description : Une description 100% texte (donc pas de liens), très similaire à la meta description classique -->
-<meta property="og:description" content="Une description 100% texte (donc pas de liens), très similaire à la meta description classique" />
+<meta
+  property="og:description"
+  content="Une description 100% texte (donc pas de liens), très similaire à la meta description classique"
+/>
 
 <meta property="og:type" content="article" />
 
@@ -137,6 +140,41 @@ Voici une bonne base documentée à copier-coller dans votre code en remplaçant
 
 <!-- Image spécifique pour twitter, 150 par 150 pour le type summary, 560 par 300 pour summary_large_image -->
 <meta name="twitter:image" content="http://example.com/images/seo.jpg" />
+```
+
+## Données structurées
+
+Voici un exemple qui remplace l'URL dans les résultats de recherche par un fil d'ariane. À placer dans le `<body>`. Le code est copié depuis la [documentation de Google sur les Données structurées](https://developers.google.com/search/docs/data-types/breadcrumb).
+
+Créez une nouvelle balise `<script>` pour chaque bloc de données structurées.
+
+```html
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Books",
+        "item": "https://example.com/books"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Authors",
+        "item": "https://example.com/books/authors"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ann Leckie",
+        "item": "https://example.com/books/authors/annleckie"
+      }
+    ]
+  }
+</script>
 ```
 
 ## Outils SEO généralistes
