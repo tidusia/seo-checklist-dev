@@ -99,19 +99,31 @@ Le référencement moderne implique autant les moteurs de recherche que les rés
 - [Facebook OpenGraph debugger](https://developers.facebook.com/tools/debug/)
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 - [Pinterest Rich Card debugger](https://developers.pinterest.com/tools/url-debugger/)
-- [The Open Graph protocol](https://ogp.me/)
 
 ### OpenGraph
 
-- [ ] Placer les balises OpenGraph sous la balise `<title>`
-- [ ] Inclure la balise : `<meta property="og:title" content="SEO pour les Samouraïs" />` (penser à faire un titre assez court qui décrit bien la page)
-- [ ] Inclure la balise : `<meta property="og:description" content="Une description 100% texte (donc pas de liens), très similaire à la meta description classique" />` (penser à faire un titre assez court qui décrit bien la page)
-- [ ] Inclure la balise : `<meta property="og:type" content="article" />`
-- [ ] Inclure la balise : `<meta property="og:url" content="http://www.example.com/article/tt0117500/" />` (URL cannonique, version desktop, sans variable de session, sans pagination ou autre compteur, cette URL ne devrait jamais changer (en utilisant généralement un uid))
-- [ ] Inclure la balise : `<meta property="og:image" content="http://example.com/images/seo.jpg" />` (attention, si vous souhaitez changer cette image avec le temps, bien penser à changer l'URL de l'image aussi, car Facebook les téléchargent une fois pour toutes)
-- [ ] Si vous avez une image : `<meta property="og:image:type" content="image/jpeg" />`
-- [ ] Si vous avez une image : `<meta property="og:image:width" content="620" />` (taille recommandée : 1200 par 630)
-- [ ] Si vous avez une image : `<meta property="og:image:height" content="541" />`
+Voici une bonne base documentée à copier-coller dans votre code en remplaçant les valeurs. Pour aller plus loin, voir la doc de [The Open Graph protocol](https://ogp.me/).
+
+```
+<!-- OpenGraph, à placer sous la balise <title> -->
+<!-- Pour plus d'informations : https://ogp.me/ -->
+<!-- Titre : penser à faire un titre assez court qui décrit bien la page, comme pour le SEO classique -->
+<meta property="og:title" content="SEO pour les Samouraïs" />
+
+<!-- Description : Une description 100% texte (donc pas de liens), très similaire à la meta description classique -->
+<meta property="og:description" content="Une description 100% texte (donc pas de liens), très similaire à la meta description classique" />
+
+<meta property="og:type" content="article" />
+
+<!-- URL : URL cannonique, version desktop, sans variable de session, sans pagination ou autre compteur, cette URL ne devrait jamais changer (en utilisant généralement un uid) -->
+<meta property="og:url" content="http://www.example.com/article/tt0117500/" />
+
+<!-- Image : attention, si vous souhaitez changer cette image avec le temps, bien penser à changer l'URL de l'image aussi, car Facebook les téléchargent une fois pour toutes. taille recommandée : 1200 par 630 -->
+<meta property="og:image" content="http://example.com/images/seo.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="620" />
+<meta property="og:image:height" content="541" />
+```
 
 ## Outils SEO généralistes
 
