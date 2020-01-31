@@ -118,11 +118,25 @@ Voici une bonne base documentée à copier-coller dans votre code en remplaçant
 <!-- URL : URL cannonique, version desktop, sans variable de session, sans pagination ou autre compteur, cette URL ne devrait jamais changer (en utilisant généralement un uid) -->
 <meta property="og:url" content="http://www.example.com/article/tt0117500/" />
 
-<!-- Image : attention, si vous souhaitez changer cette image avec le temps, bien penser à changer l'URL de l'image aussi, car Facebook les téléchargent une fois pour toutes. taille recommandée : 1200 par 630 -->
+<!-- Image : attention, si vous souhaitez changer cette image avec le temps, bien penser à changer l'URL de l'image aussi (avec un paramètre de requête ?v=27365 par exemple), car Facebook les téléchargent une fois pour toutes. taille recommandée : 1200 par 630 -->
 <meta property="og:image" content="http://example.com/images/seo.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="620" />
 <meta property="og:image:height" content="541" />
+
+<!-- Partie spécifique à Twitter -->
+<!-- Pour plus d'infos : https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started -->
+<!-- Format du média riche affiché, voir la doc pour les possibilités -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Compte twitter du site cannonique (a qui appartient le domaine) -->
+<meta name="twitter:site" content="@site" />
+
+<!-- Compte twitter du créateur du contenu de la page précise -->
+<meta name="twitter:creator" content="@creator" />
+
+<!-- Image spécifique pour twitter, 150 par 150 pour le type summary, 560 par 300 pour summary_large_image -->
+<meta name="twitter:image" content="http://example.com/images/seo.jpg" />
 ```
 
 ## Outils SEO généralistes
