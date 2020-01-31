@@ -4,21 +4,13 @@ Ceci est une checklist à destination du développeur sur les points à vérifie
 
 Le référencement moderne implique autant les moteurs de recherche que les réseaux sociaux. Il faut s'assurer que le contenu soit bien interprété par les deux.
 
-## Inspirations :
-
-- [Opquast checklist](https://checklists.opquast.com/seo/)
-- [ibandominguez SEO checklist](https://github.com/ibandominguez/seo-checklist)
-- [TutsPlus SEO checklist](https://github.com/tutsplus/SEO-Checklist-for-Web-Designers/blob/master/seo_checklist.md)
-- [FrontEnd Masters Modern SEO course](https://frontendmasters.com/courses/modern-seo/introduction/)
-
-## Outils SEO généralistes
-
-- [WooRank](https://www.woorank.com/fr) : outil complet et généraliste, interface très agréable, priorisation des actions à mener, génération de rapports pdf
-
-## Checklist
+## SEO traditionnel
 
 - [ ] Pas de `meta keywords` ni de liste de mots-clés cachés dans le contenu.
-- [ ] Pas de liens cassés ni de contenu obsolète
+- [ ] Pas de liens cassés
+- [ ] Pas de contenu obsolète
+- [ ] Ajouter `rel="nofollow"` sur les liens réciproques (2 pages de 2 domaines différents se pointant l'une l'autre)
+- [ ] Faire supprimer (ou désavouer via Google Search Console) les backlinks de mauvaise qualité
 - [ ] Alternatives Chaque image ou élément non textuel est dotée d'une alternative textuelle
 - [ ] Alternatives Chaque contenu audio et vidéo est accompagné de sa transcription textuelle
 - [ ] Alternatives Les textes mis en images sont reproduits dans l'alternative textuelle.
@@ -97,3 +89,43 @@ Le référencement moderne implique autant les moteurs de recherche que les rés
 - [ ] Serveur Les noms de domaine secondaires redirigent en 301 vers le nom de domaine principal.
 - [ ] Serveur Les URL alternatives vers chaque page font l'objet d'une redirection 301 vers l'URL principale.
 - [ ] Serveur Le site et le serveur sont configurés pour délivrer les pages de manière performante.
+
+## Méta Données
+
+### Quelques outils pour bien travailler
+
+- [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/)
+- [SEO META chrome extension](http://www.seo-extension.com/)
+- [Facebook OpenGraph debugger](https://developers.facebook.com/tools/debug/)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- [Pinterest Rich Card debugger](https://developers.pinterest.com/tools/url-debugger/)
+- [The Open Graph protocol](https://ogp.me/)
+
+### OpenGraph
+
+- [ ] Placer les balises OpenGraph sous la balise `<title>`
+- [ ] Inclure la balise : `<meta property="og:title" content="SEO pour les Samouraïs" />` (penser à faire un titre assez court qui décrit bien la page)
+- [ ] Inclure la balise : `<meta property="og:description" content="Une description 100% texte (donc pas de liens), très similaire à la meta description classique" />` (penser à faire un titre assez court qui décrit bien la page)
+- [ ] Inclure la balise : `<meta property="og:type" content="article" />`
+- [ ] Inclure la balise : `<meta property="og:url" content="http://www.example.com/article/tt0117500/" />` (URL cannonique, version desktop, sans variable de session, sans pagination ou autre compteur, cette URL ne devrait jamais changer (en utilisant généralement un uid))
+- [ ] Inclure la balise : `<meta property="og:image" content="http://example.com/images/seo.jpg" />` (attention, si vous souhaitez changer cette image avec le temps, bien penser à changer l'URL de l'image aussi, car Facebook les téléchargent une fois pour toutes)
+- [ ] Si vous avez une image : `<meta property="og:image:type" content="image/jpeg" />`
+- [ ] Si vous avez une image : `<meta property="og:image:width" content="620" />` (taille recommandée : 1200 par 630)
+- [ ] Si vous avez une image : `<meta property="og:image:height" content="541" />`
+
+## Outils SEO généralistes
+
+Ces outils ne sont pas là pour aider le développeur mais le marketer. Je les ajoute tout de même car cela fait un très bon complément à cette checklist.
+
+- [WooRank](https://www.woorank.com/fr) : outil complet et généraliste, interface très agréable, priorisation des actions à mener, génération de rapports pdf
+- [Google Keyword Planner](https://ads.google.com/intl/fr_fr/home/tools/keyword-planner/) : Pour affiner son choix de mots-clés afin de sortir des termes trop génériques
+- [Google Trends](https://trends.google.fr/trends/?geo=FR) : afin de comparer l'évolution de popularité des mots-clés
+- [Google Search Console](https://search.google.com/search-console/about) : pour surveiller l'état des recherches et des liens, permets de vérifier s'il y a des backlinks depuis des mauvais sites (spam)
+- [SpyFu](https://www.spyfu.com/) : découvrez la stratégie de mots clés de vos concurrents
+
+## Inspirations :
+
+- [Opquast checklist](https://checklists.opquast.com/seo/)
+- [ibandominguez SEO checklist](https://github.com/ibandominguez/seo-checklist)
+- [TutsPlus SEO checklist](https://github.com/tutsplus/SEO-Checklist-for-Web-Designers/blob/master/seo_checklist.md)
+- [FrontEnd Masters Modern SEO course](https://frontendmasters.com/courses/modern-seo/introduction/)
